@@ -19,7 +19,7 @@ const App = () => {
             console.log(reader.result);
             // Logs data:<type>;base64,wL2dvYWwgbW9yZ...
             const file_data = reader.result;
-            fetch('https://cat-app-flask.onrender.com/predict_image', {
+            fetch('https://30a9-175-156-152-134.in.ngrok.io/predict_image', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
@@ -89,7 +89,7 @@ const App = () => {
         const data = photo.toDataURL("image/jpeg");
 
         console.warn(data);
-        fetch('https://cat-app-flask.onrender.com/predict_image', {
+        fetch('https://30a9-175-156-152-134.in.ngrok.io/predict_image', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
